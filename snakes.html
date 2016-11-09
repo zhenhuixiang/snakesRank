@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<title>snakes</title>
+	<style type="text/css">
+		
+	</style>
+	<script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+</head>
+<body>
+	<h1 class="title">CUG贪吃蛇争霸赛</h1>
+	<div class="canvas_wrapper">
+
+		<div id="score">得分：<span id="score_num">0</span></div>
+
+		<canvas id="arcade" height="450px" width="280px" style=""></canvas><!-- 可以留作画界面 -->
+
+		<canvas id="canvas" height="200px" width="250px" style=""></canvas>
+
+		<div id="control">
+			<div class="control_block up" id="up"></div>
+			<div class="clearfloat">
+				<div class="control_block left" id="left"></div>
+				<div class="control_block right" id="right"></div>
+			</div>
+			<div class="control_block down" id="down"></div>
+		</div>
+
+		<div id="rank">
+			<h5 id="rank_title"><a href="#">排行榜</a></h5>
+			<div id="rank_content" style="display:none;">
+				<div id="rank_list">
+					<ol>
+					</ol>
+				</div>
+				<div id="ad">这是一个广告位</div>
+			</div>
+		</div>
+
+		<div id="login">
+			<div id="logo"></div>
+			<form id="login_form" action="#" method="POST">
+				<div class="input_wrapper"><input name="name" class="login_input" id="name" type="text" size="25" placeholder="你的名字" value=""></div>
+				<!--  <div class="input_wrapper"><input name="qq" class="login_input" id="qq" type="tel" size="25" placeholder="你的qq号" value=""></div> -->
+				<div class="input_wrapper"><input name="go" class="login_input_submit" id="go" type="button" value="进入游戏" style=""></div>
+			</form>
+			<div style="font-size:12px; width:235px;margin:100px auto 0 auto">
+				<p>注意：这是一场比赛，请填入真实的信息，在获得奖励以后方便工作人员发放奖励，谢谢！</p>
+			</div>
+		</div>
+
+		<div id="pushword" style="">
+			<div id="pushword_word" style=""></div>
+			<a href="#"><div id="pushword_ok" style="">确定</div></a>
+		</div>
+
+	</div>
+	<div class="footer"><a href="#">地大点石团队出品</a></div>
+	<script type="application/javascript" src="js/fastclick.js"></script> 
+	<script type="application/javascript" src="js/core.js"></script> 
+	<script type="text/javascript" src="js/no_core.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+*{
+	border: 0px;
+	margin: 0px;
+}
+a,a:hover,a:active,a:visited {
+    color: #000;
+    text-decoration: none;
+}
+body{
+	background: #eee;
+}
+.title{
+	margin-top: 5px;
+	margin-bottom: 3px;
+	font-size: 28px;
+}
+.title,#canvas,#xycoordinates{
+	text-align: center;
+}
+.canvas_wrapper{
+	width: 300px;
+	position: relative;
+	margin:0 auto; 
+}
+#score{
+	position: absolute;
+	top: 3px;
+	left: 130px;
+	text-align: center;
+	height: 14px;
+	line-height: 14px;
+	font-size: 10px;
+}
+#arcade{
+	border:3px solid #000;
+	border-radius:10px;
+	background:#fff;
+	display:block;
+	margin:3px auto 3px auto;
+}
+#canvas{
+	position: absolute;
+	top: 16px;
+	left:22px;
+	border:3px solid #000;
+	background:#fff;
+	display:block;
+	margin:0px auto 0 auto;
+}
+#control{
+	width: 170px;
+	margin:0 auto; 
+	position: absolute;
+	top: 260px;
+	left: 65px;
+}
+.control_block{
+	text-align: center;
+	line-height: 50px;
+	background: #f44;
+	width: 50px;
+	height: 50px;
+} 
+.clearfloat{
+	overflow:hidden;
+	margin:5px auto; 
+}
+.up,.down{
+	margin: 5px auto;
+}
+.down{
+	background: url(../img/arrow_down.png);
+}
+.up{
+	background: url(../img/arrow_up.png);
+}
+.left{
+	background: url(../img/arrow_left.png);
+	float: left;
+}
+.right{
+	float: right;
+	background: url(../img/arrow_right.png);
+}
+.up,.down,.left,.right{
+	-webkit-background-size: 50px 50px;
+	background-size: 50px 50px;
+}
+.control_block:active{
+	-webkit-background-size: 55px 55px;
+	background-size: 55px 55px;
+}
+#rank{
+	background: #fff;
+	width: 250px;
+	position: absolute;
+	top:219px;
+	left: 22px;
+	font-size: 12px;
+	border-left: 3px solid #000;
+	border-right: 3px solid #000;
+	transition: all 0.5s;
+    -moz-transition: all 0.5s;  /* Firefox 4 */
+    -webkit-transition: all 0.5s;   /* Safari 和 Chrome */
+    -o-transition: all 0.5s;    /* Opera */
+}
+#rank h5{
+	display: block;
+	margin:0 auto;
+	text-align: center;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+	height: 20px;
+	line-height: 20px;
+}
+#rank_content{
+
+	height: 206px;
+	text-align: center;
+}
+#rank_list{
+	width: 100px;
+	margin-left: 55px;
+	margin-top: 2px;
+	font-size: 12px;
+}
+#ad{
+	height: 20px;
+	width: 250px;
+	position: absolute;
+	bottom: 0px;
+}
+.footer{
+	margin-top: 10px;
+	font-size:12px; 
+	text-align: center;
+}
+#login{
+	background: #fff;
+	height: 440px;
+	width: 265px;
+	position: absolute;
+	top: 3px;
+	left: 17.5px;
+	transition: all 0.5s;
+    -moz-transition: all 0.5s;  /* Firefox 4 */
+    -webkit-transition: all 0.5s;   /* Safari 和 Chrome */
+    -o-transition: all 0.5s;    /* Opera */
+
+}
+#logo{
+	width: 30px;
+	height: 60px;
+	margin: 45px auto 60px auto;
+	background: url(../img/logo.png);
+	-webkit-background-size: 30px 60px;
+	background-size: 30px 60px;
+	color: #fff;
+}
+#logo_txt{
+	font-size: 12px;
+}
+.login_input{
+	border: 1px solid #000;
+	padding:  0 0 0 5px;
+	height: 30px;
+	line-height: 20px;
+	width: 243px;
+}
+.login_input_submit{
+	border: 1px solid #000;
+	height: 30px;
+	line-height: 30px;
+	width: 250px;
+	background:#000;
+	color:#fff;
+}
+.input_wrapper{
+	width: 250px;
+	margin: 10px auto;
+}
+#pushword{
+	width:270px;
+	height:180px;
+	position: absolute; 
+	top:160px;
+	left:14px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius:5px;
+	text-align: center;
+	display:none;
+}
+#pushword_word{
+	width:270px;
+	height:70px;
+	padding-top:60px;
+	background: #fff;
+	border-radius:5px 5px 0 0;
+}
+#pushword_ok{
+	color: #fff;
+	width:270px;
+	height:50px;
+	background: #000;
+	line-height: 50px;
+	border-radius:0 0 5px 5px;
+}
+#pushword_ok:hover{
+	background: #555;
+}
