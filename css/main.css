@@ -9,6 +9,11 @@ a,a:hover,a:active,a:visited {
 body{
 	background: #eee;
 }
+#wrapper{
+	background:rgb(237, 191, 156);
+	height: 100vh;
+	overflow: hidden;
+}
 .title{
 	margin-top: 5px;
 	margin-bottom: 3px;
@@ -34,7 +39,6 @@ body{
 #arcade{
 	border:3px solid #000;
 	border-radius:10px;
-	background:#fff;
 	display:block;
 	margin:3px auto 3px auto;
 }
@@ -51,7 +55,7 @@ body{
 	width: 170px;
 	margin:0 auto; 
 	position: absolute;
-	top: 260px;
+	top: 270px;
 	left: 65px;
 }
 .control_block{
@@ -91,7 +95,7 @@ body{
 	background-size: 55px 55px;
 }
 #rank{
-	background: #fff;
+	background: rgb(222, 222, 222);
 	width: 250px;
 	position: absolute;
 	top:219px;
@@ -149,17 +153,46 @@ body{
 
 }
 #logo{
-	width: 30px;
+	width: 48px;
 	height: 60px;
+	position: relative;
 	margin: 45px auto 60px auto;
-	background: url(../img/logo.png);
-	-webkit-background-size: 30px 60px;
-	background-size: 30px 60px;
+	background: url(../img/logo.jpg);
+	-webkit-background-size: 48px 60px;
+	background-size: 48px 60px;
 	color: #fff;
+	animation:logo 0.5s linear 0.5s infinite alternate;
+	/* Firefox: */
+	-moz-animation:logo 0.5s linear 0.5s infinite alternate;
+	/* Safari and Chrome: */
+	-webkit-animation:logo 0.5s linear 0.5s infinite alternate;
+	/* Opera: */
+	-o-animation:logo 0.5s linear 0.5s infinite alternate;
 }
-#logo_txt{
-	font-size: 12px;
+@keyframes logo
+{
+0%   {background: left:0px; top:0px;}
+100%  {background:margin-bottom:70px;left:0px; top:20px;}
 }
+
+@-moz-keyframes logo /* Firefox */
+{
+0%   {background: left:0px; top:0px;}
+100%  {background:margin-bottom:70px;left:0px; top:20px;}
+}
+
+@-webkit-keyframes logo /* Safari and Chrome */
+{
+0%   {background: left:0px; top:0px;}
+100%  {background:margin-bottom:70px;left:0px; top:20px;}
+}
+
+@-o-keyframes logo /* Opera */
+{
+0%   {background: left:0px; top:0px;}
+100%  {background:margin-bottom:70px;left:0px; top:20px;}
+}
+
 .login_input{
 	border: 1px solid #000;
 	padding:  0 0 0 5px;

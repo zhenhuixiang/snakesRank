@@ -99,7 +99,10 @@ document.getElementById("go").onclick = function(){
 	if ( /*qq != "" &&*/ name != "" ){
 		username = name;
 		login.style.opacity = "0";
-		setTimeout("login.style.zIndex = '-1';",500);
+    document.getElementById('arcade').style.background='rgb(171, 171, 171)';
+		setTimeout("login.style.zIndex = '-1'; ",500);
+
+    
 	}
 	else{
 		pw("请完成表单后开始游戏~");
