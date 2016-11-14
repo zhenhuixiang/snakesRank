@@ -116,3 +116,25 @@ function pw(a){
 	pushword_word.innerHTML = txt;
 	pushword.style.display = "block";
 }
+
+function endm(){
+   var audio = document.getElementById('audio_end'); 
+   if(audio!==null){              
+      audio.play(); //播放  
+   }
+}
+function eatm(){
+   var audio = document.getElementById('audio_eat'); 
+   if(audio!==null){              
+      audio.play(); //播放  
+   }
+}
+document.getElementById('song').onclick = function () {
+  var audio = document.getElementById('audio_bg'); 
+  if (!audio.paused) {
+    audio.pause();
+  }
+  else{
+    audio.play();
+  }
+};

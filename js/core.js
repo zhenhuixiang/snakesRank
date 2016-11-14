@@ -65,7 +65,12 @@ function draw(){
 			drawFood(); //递归
 		}
 	}//画食物
-	drawFood();
+	food.x = 125;
+	food.y = 105;
+	head.beginPath();
+	head.strokeStyle = 'rgba(255,0,0,1)';
+	head.arc(food.x,food.y,3,0,Math.PI*2,true);// 画食物
+	head.stroke();
 
 	
 	function clearRect(x,y,a){
@@ -128,16 +133,20 @@ function draw(){
 			if (s.length > 5){
 				if (s[0].x == food.x && s[0].y ==food.y){
 					drawFood();
-					score_num.innerHTML = s.length - 5 ;
+					eatm();
+					score_num.innerHTML = s.length-5;
 				}
 				else{
 					clearRect(s[s.length - 1].x,s[s.length - 1].y,l);
 					s.pop();
 				}
 			}
+
+
 			for (var i = 1; i < s.length; i++) {
 				if(s[i].x ==s[0].x && s[i].y == s[0].y){
 					head.clearRect(0,0,250,200);
+					endm();
 					pw("game over! 你的得分是："+score);
 					saveData(username, score);
 					draw();
@@ -148,6 +157,7 @@ function draw(){
 						
 			if (s[0].x<0 || s[0].x>250 || s[0].y<0 ||s[0].y>200){
 				head.clearRect(0,0,250,200);
+				endm();
 				pw("game over! 你的得分是："+score);
 				saveData(username, score);
 				draw();
@@ -208,6 +218,7 @@ function draw(){
 				if (s.length > 5){
 					if (s[0].x == food.x && s[0].y ==food.y){
 						drawFood();
+						eatm();
 						score_num.innerHTML = s.length - 5 ;
 					}
 					else{
@@ -215,9 +226,11 @@ function draw(){
 						s.pop();
 					}
 				}
+
 				for (var i = 1; i < s.length; i++) {
 					if(s[i].x ==s[0].x && s[i].y == s[0].y){
 						head.clearRect(0,0,250,200);
+						endm();
 						pw("game over! 你的得分是："+score);
 						saveData(username, score);
 						draw();
@@ -227,6 +240,7 @@ function draw(){
 				}					
 				if (s[0].x<0 || s[0].x>250 || s[0].y<0 ||s[0].y>200){
 					head.clearRect(0,0,250,200);
+					endm();
 					pw("game over! 你的得分是："+score);
 					saveData(username, score);
 					draw();

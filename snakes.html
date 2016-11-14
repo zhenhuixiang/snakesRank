@@ -8,10 +8,10 @@
 	<style type="text/css">
 		
 	</style>
-	<script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
+	<script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
 	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-	<script src="url.min.js"></script>
-	<script src="game.js"></script>
+	<script src="js/url.min.js"></script>
+	<script src="js/wxapi.js"></script>
 	<script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
 </head>
 <body>
@@ -41,7 +41,7 @@
 						<ol>
 						</ol>
 					</div>
-					<div id="ad">这是一个广告位</div>
+					<div id="ad">这是一个广告位，我们没有广告，so没有奖金</div>
 				</div>
 			</div>
 
@@ -52,9 +52,11 @@
 					<!--  <div class="input_wrapper"><input name="qq" class="login_input" id="qq" type="tel" size="25" placeholder="你的qq号" value=""></div> -->
 					<div class="input_wrapper"><input name="go" class="login_input_submit" id="go" type="button" value="进入游戏" style=""></div>
 				</form>
-				<div style="font-size:12px; width:235px;margin:100px auto 0 auto">
-					<p>注意：这是一场比赛，请填入真实的信息，在获得奖励以后方便工作人员发放奖励，谢谢！</p>
+				<div style="color:#;font-size:14px; width:235px;margin:150px auto 0 auto;text-align:center;">
+					<p><strong>Who's the king of CUG SNAKES?</strong></p>
+					<button type="button" value="BGM" id="song" style="display:block;border: 1px solid #000; width:43px;height:20px;margin:12px auto 0 auto;">BGM</button>
 				</div>
+				
 			</div>
 
 			<div id="pushword" style="">
@@ -64,7 +66,12 @@
 
 		</div>
 		<div class="footer"><a href="#">地大点石团队出品</a></div>
+		
+		
 	</div>
+	<audio src="audio/bg.mp3" id="audio_bg" autoplay="autoplay" loop="loop"></audio>
+	<audio src="audio/eat.mp3" id="audio_eat" preload="auto"></audio>
+	<audio src="audio/end.wav" id="audio_end" preload="auto"></audio>
 	<script type="application/javascript" src="js/fastclick.js"></script> 
 	<script type="text/javascript" src="js/no_core.js"></script>
 	<script type="application/javascript" src="js/core.js"></script> 
